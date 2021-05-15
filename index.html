@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covid 19 Tracker</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+      }
+
+      body {
+        overflow: hidden;
+      }
+      .heading {
+        text-align: center;
+        margin-top: 15px;
+      }
+
+      .container {
+        /* display: grid;
+  grid-template-columns: 250px 250px 250px;
+  grid-template-rows: 100px 100px;
+  height: 65vh;
+  width: 92vw;
+  place-items: center;
+  place-content: center;
+  align-content: center;
+  align-content: center;
+  margin: 100px auto;
+  align-content: center;
+  grid-row-gap: 30px;
+  grid-column-gap: 62px; */
+        display: flex;
+        flex-direction: row;
+        height: 92vh;
+        width: 100vw;
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+      .card {
+        width: 850px;
+        /* background-color: red; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .card1 {
+        background-color: thistle;
+      }
+      .card2 {
+        background-color: #fff3f3d4;
+      }
+
+      .card3 {
+        background-color: red;
+      }
+      .card4 {
+        background-color: #2af92a;
+      }
+      .card5 {
+        background-color: #ff8f8f;
+      }
+      .card6 {
+        background: red;
+      }
+
+      .card1,
+      .card2,
+      .card3,
+      .card4,
+      .card5,
+      .card6 {
+        width: 200px;
+        height: 75px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="heading">Covid-19 UPDATE</h1>
+    <div class="container">
+      <div class="card">
+        <div class="card1">
+          <h2>Nepal</h2>
+          <h2>Live Update</h2>
+        </div>
+
+        <div class="card2">
+          <h3>Total Cases</h3>
+          <h1>{tCases}</h1>
+        </div>
+
+        <div class="card3">
+          <h3>Total Deaths</h3>
+          <h1>{tDeaths}</h1>
+        </div>
+
+        <div class="card4">
+          <h3>Total Recovered</h3>
+          <h1>{tRecovered}</h1>
+        </div>
+
+        <div class="card5">
+          <h3>New Cases</h3>
+          <h1>{newCases}</h1>
+        </div>
+
+        <div class="card6">
+          <h3>Today's Deaths</h3>
+          <h1>{todayDeaths}</h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
